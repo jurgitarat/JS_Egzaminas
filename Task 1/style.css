@@ -51,7 +51,10 @@ form {
   background-color: #000;
   color: #fff;
 }
-
+#output p {
+  text-align: center;
+  font-size: 26px;
+}
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
