@@ -10,3 +10,7 @@ const audi = {
   year: 2005,
   color: 'white',
 };
+function showObjectKeys(objektas){
+  masyvas = Object.keys(objektas);
+return masyvas;
+}
