@@ -5,8 +5,8 @@ pusėje esančiame "state" skaičiavimo bloke (<div id="btn__state">0</div>)
 ------------------------------------------------------------------- */
 document.getElementById("btn__element").addEventListener("click", clickKlausytojas);
 
-function clickKlausytojas(){
-    clickSkaicius = parseInt(document.getElementById("btn__state").innerText);
+function clickKlausytojas() {
+    let clickSkaicius = parseInt(document.getElementById("btn__state").innerText);
     clickSkaicius++;
-    document.getElementById("btn__state").innerText=clickSkaicius;
+    document.getElementById("btn__state").innerText = clickSkaicius;
 }

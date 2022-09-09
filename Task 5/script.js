@@ -20,20 +20,20 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
 
-function filterDogOwers(masyvas){
+function filterDogOwers(masyvas) {
   users.forEach(element => {
-    if (element.hasDog){
-      masyvas.push(element);
-    }
+      if (element.hasDog) {
+          masyvas.push(element);
+      }
   })
-return masyvas;
+  return masyvas;
 }
 
-function filterAdults(masyvas){
+function filterAdults(masyvas) {
   users.forEach(element => {
-    if (element.age>=18){
-      masyvas.push(element);
-    }
+      if (element.age >= 18) {
+          masyvas.push(element);
+      }
   })
-return masyvas;
+  return masyvas;
 }
