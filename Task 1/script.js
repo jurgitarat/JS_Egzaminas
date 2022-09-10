@@ -8,3 +8,16 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+document.getElementById("submit-btn").parentElement.addEventListener("submit", submitFunction);
+
+function submitFunction(event) {
+    event.preventDefault();
+    const kilogramai = document.getElementById("search").value;
+    const svarai = kilogramai * 2.2046;
+    const gramai = kilogramai / 0.001;
+    const uncijos = kilogramai * 35.274;
+    html = "<p >" + kilogramai + " kg atitinka: " + svarai +
+        " lb , arba " + gramai + " g. arba " + uncijos + " oz. </p>";
+    document.getElementById("output").innerHTML = html;
+}

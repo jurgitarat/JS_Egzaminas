@@ -19,3 +19,20 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge(masyvas) {
+  masyvas[0] = 0;
+  users.forEach(element => {
+      masyvas[0] += element.age;
+  })
+  masyvas = masyvas / users.length;
+  return masyvas;
+}
+
+
+function getUsersNames(masyvas) {
+  users.forEach(element => {
+      masyvas.push(element.name);
+  })
+  return masyvas;
+}

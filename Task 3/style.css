@@ -59,3 +59,14 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+#output div{
+  float:left;
+  margin-top:20px;
+  margin-right:20px;
+  text-align: center;
+}
+
+#output div img{
+  width:250px;
+}
